@@ -1,0 +1,80 @@
+\documentclass{colten_cv}
+
+\setname{Colten Appleby}{}
+\setaddress{New York City, New York}
+\setmobile{+1 203-505-4000}
+\setmail{colten.appleby@gmail.com}
+% \setcitizenship{Eldian Citizen}
+\setlinkedinaccount{https://www.linkedin.com/in/colten-appleby/} 
+\setgithubaccount{https://github.com/topics/coltenappleby} 
+\setthemecolor{MidnightBlue}
+
+    
+\begin{document}
+
+%Create header
+\headerview
+\vspace{1ex} % white space
+%
+\section{Education} 
+    \datedexperience{B.S. in Industrial Engineering}{2014 - 2018}
+    \explanation{Rensselaer Polytechnic Institute}{Troy, NY} 
+    % \datedexperience{Bachelor of Engineering - Mechanical}{Sep 2013 - Apr 2018}
+    % \explanation{Rando University}{San Francisco, CA}
+%
+\section{Skills}
+    \newcommand{\skillone}{\createskill{Programming Languages}{Python \cpshalf JavaScript \cpshalf Ruby \cpshalf}}
+    %
+    \newcommand{\skilltwo}{\createskill{Technologies}{Docker \cpshalf Ruby on Rails \cpshalf Palantir Foundry \cpshalf React.js \cpshalf Revit, Navisworks}}
+    %
+    \createskills{\skillone, \skilltwo}
+    \vspace{-3mm} % reduces whitespace!
+    %
+% 
+\section{Experience}
+    %
+    \datedexperience{Katalyst.DI}{Nov 2021 - Present}
+    \explanation{Integration Engineer}{New York, NY}
+    \explanationdetail{
+        \smallskip
+            \coloredbullet\ %
+            Developed Data Ingestion workflows from our Supply Chain management platform to Ontological network to improve its stability and performance.
+
+        \smallskip 
+        \coloredbullet\ %
+            Front end in React and TypeScript. Backend in .NET and Java Spring Boot
+            
+        \smallskip
+     }
+     %
+    \datedexperience{WeWork}{June 2017 - Dec 2020} 
+    \explanation{Contruction Technology Researcher}{New York, NY} 
+    \explanationdetail{ 
+    \smallskip 
+    \coloredbullet\ %
+        Wrote global construction Technology standards   
+    %  \smallskip
+    \bigskip
+     } 
+%
+\section{Notable Projects}
+     %
+    \datedexperience{Baseball Lowlights}{Mar 2021 - Sep 2021}
+    \explanation{Full Stack Developer}{San Francisco, CA} 
+    \explanationdetail{
+    \smallskip 
+    \coloredbullet\ %
+        Probably want to leave these out
+    \smallskip
+     }
+     %
+
+%
+\section{Other Interests}
+    \newcommand{\skillthree}{\createskill{}{Baseball \cpshalf Statistics \cpshalf History \cpshalf Running \cpshalf Skiing \cpshalf Photography}}
+    %
+    \createskills{\skillthree}
+    \vspace{-3mm} % reduces whitespace!
+    %
+% 
+\end{document}
