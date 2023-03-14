@@ -26,11 +26,13 @@
     % \explanation{Rando University}{San Francisco, CA}
 %
 \section{Skills}
-    \newcommand{\skillone}{\createskill{Programming Languages}{Python \cpshalf JavaScript \cpshalf Ruby \cpshalf PostgreSQL \cpshalf Git }}
+    \newcommand{\skillone}{\createskill{Programming Languages}{Python \cpshalf JavaScript \cpshalf Ruby \cpshalf PostgreSQL \cpshalf Git \cpshalf R}}
     %
-    \newcommand{\skilltwo}{\createskill{Technologies}{Docker \cpshalf Ruby on Rails \cpshalf Palantir Foundry \cpshalf React.js \cpshalf d3.js \cpshalf Revit, Navisworks}}
+    \newcommand{\skilltwo}{\createskill{Technologies}{Docker \cpshalf Ruby on Rails \cpshalf React.js \cpshalf d3.js \cpshalf REST}}
     %
-    \createskills{\skillone, \skilltwo}
+    \newcommand{\skillthree}{\createskill{Software}{Palantir Foundry \cpshalf Revit, Navisworks \cpshalf Excel, Solver \cpshalf QGIS \cpshalf SAP ByDesign}}
+
+    \createskills{\skillone, \skilltwo, \skillthree}
     \vspace{-3mm} % reduces whitespace!
     %
 % 
@@ -41,15 +43,29 @@
     \explanationdetail{
         \smallskip
         \coloredbullet\ %
-        Developed Data Ingestion workflows from our Supply Chain management platform to Ontological network to improve stability and performance.
+        Developed data pipelines from Katalyst.DI's (KDI) supply chain platform, customer's data, and public soures with Palantir Foundry. 
+        PySpark transformations from raw data to backing datasets for a robust Ontology designed to extract actionable intelligence to sell to clients
+        
+        \smallskip
+        \coloredbullet\ %
+        Built integrations between Autodesk BIM360, Procore, Google Sheets and Airtable with KDI platform and Palantir Foundry
 
         \smallskip 
         \coloredbullet\ %
-        Front end in React, TypeScript, and d3.js. Backend in .NET and Java Spring Boot.
-
+        Developed NPM package for charts and graphs in React and d3.js. Assissted with KDI's platform's front end in React and TypeScript. Helped migrate the data microservice from Java Spring Boot to .NET
+        \smallskip
+    }
+         %
+    \datedexperience{WR Liggett LLC}{Jan 2021 - Nov 2021}
+    \explanation{ERP Technology Integrator}{New York, NY}
+    \explanationdetail{
         \smallskip
         \coloredbullet\ %
-        Built integrations between Autodesk BIM360, Procore, Google Sheets and Airtable with KDI platform and Palantir Foundry. 
+        Supply Chain, BoM, current state and future state mapping. Inventory and engineering software integrations
+        \smallskip 
+
+        \coloredbullet\ %
+        Reorganized, cleaned, and transformed PostgreSQL database into flat files for transfer into new system
 
         \smallskip
      }
@@ -89,22 +105,36 @@
         \smallskip 
         \textbf{Baseball Lowlights} - \href{https://github.com/coltenappleby/Baseball-Lowlights-FE}{\faGithub \footnotesize FE} \cpshalf
         \href{https://github.com/coltenappleby/Baseball-Lowlights-BE}{\faGithub \footnotesize BE}
+        - Watch, comment, like, and discuss your favorite baseball highlights!
+        \indent Technologies used: React, Javascript, Ruby, Ruby on Rails, PostgreSQL
         \smallskip
-        \coloredbullet\
-        Watch, comment, like, and discuss your favorite baseball highlights!
-        \smallskip
-        \coloredbullet\
-        Technologies used: React, Javascript, Ruby, Ruby on Rails, PostgreSQL
 
+        \textbf{Hoose} - \href{https://github.com/coltenappleby/hoose-frontend}{\faGithub \footnotesize FE} \cpshalf
+        \href{https://github.com/coltenappleby/hoose-backend}{\faGithub \footnotesize BE}
+        - Web app designed to compare zip codes\textquotesingle    housing values with the local job market
+        \indent Technologies used:  React, javascript, React Charts, Nokoguri, RESTful, Ruby on Rails, PostgreSQL, SQL
+        \smallskip
+
+        \textbf{Brewmaster} - \href{https://github.com/coltenappleby/Brewmaster}{\faGithub \footnotesize Github}
+        - View, review, find, and enjoy craft beers, breweries and pubs
+        \indent Technologies used: Ruby on Rails, SQLite, Active Record, MVC
         \smallskip
     }
-     %
+    %
+    \datedexperience{FreeCodeCamp}{2021}
+    \explanation{Full Stack Web Development Coding Bootcamp}{} 
+    \explanationdetail{
+        \smallskip 
+        \textbf{Data Visualization} - \href{https://www.freecodecamp.org/certification/fcc82496d2e-8f04-4693-b0d6-2973ed6c0ad5/data-visualization}{Certificate}
+        - Data Visualization with d3.js
+        \smallskip
+    }
 
 %
 \section{Other Interests}
-    \newcommand{\skillthree}{\createskill{}{Baseball \cpshalf Statistics \cpshalf History \cpshalf Running \cpshalf Skiing \cpshalf Photography}}
+    \newcommand{\interests}{\createskill{}{Baseball \cpshalf Statistics \cpshalf History \cpshalf Running \cpshalf Skiing \cpshalf Photography}}
     %
-    \createskills{\skillthree}
+    \createskills{\interests}
     \vspace{-3mm} % reduces whitespace!
     %
 % 
