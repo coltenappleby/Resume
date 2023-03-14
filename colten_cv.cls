@@ -35,6 +35,10 @@
 \newcommand*{\setthemecolor}[1]{\def\@themecolor{#1}}
 \newcommand*{\setlinkedinaccount}[1]{\def\@linkedinaccount{#1}}
 \newcommand*{\setgithubaccount}[1]{\def\@githubaccount{#1}}
+\newcommand*{\setwebsite}[1]{\def\@website{#1}}
+\newcommand*{\setgithubusername}[1]{\def\@githubusername{#1}}
+
+
 
 \hypersetup{
     colorlinks=true,
@@ -51,8 +55,11 @@
 \hfill
 }
     
-\newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
-\newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
+\newcommand{\githubview}{\href{\@githubaccount}{\faGithub\ \footnotesize @\@githubusername} }
+\newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize LinkedIn}}
+\newcommand{\websiteview}{\href{\@website}{\faUser\ \footnotesize appleby.dev}}
+
+
 
 \newcommand{\name}{%
     {\LARGE \color{\@themecolor} \@firstname \ \textsc{\@lastname}}
@@ -62,7 +69,7 @@
         % {\small \@address  \cps \@citizenship \\ \@mobile \cps \@mail% %%OLD
         {\small \@mail \ \cpshalf \@mobile %
         \\%
-        \linkedinview \cpshalf \githubview \\ 
+        \githubview \cpshalf \linkedinview \cpshalf \websiteview\\ 
         } % 
 }
 
