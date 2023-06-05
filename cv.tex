@@ -1,150 +1,209 @@
-\documentclass{colten_cv}
+%-------------------------
+% Resume in Latex
+% Author : Colten Appleby
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
-\setname{Colten Scott Appleby}{}
-\setaddress{New York City, New York}
-\setmobile{+1 203-505-4000}
-\setmail{colten.appleby@gmail.com}
-% \setcitizenship{Eldian Citizen}
-\setlinkedinaccount{https://www.linkedin.com/in/colten-appleby/} 
-\setgithubaccount{https://github.com/coltenappleby}
-\setgithubusername{coltenappleby}
-\setwebsite{https://appleby.dev}
+\documentclass[letterpaper,11pt]{article}
 
-\setthemecolor{MidnightBlue}
+\usepackage{latexsym}
+% \usepackage[empty]{fullpage}
+\usepackage[margin=1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-    
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 
-%Create header
-\headerview
-\vspace{1ex} % white space
-%
-\section{Education} 
-    \datedexperience{B.S. in Industrial Engineering}{2014 - 2018}
-    \explanation{Rensselaer Polytechnic Institute}{Troy, NY} 
-    % \datedexperience{Bachelor of Engineering - Mechanical}{Sep 2013 - Apr 2018}
-    % \explanation{Rando University}{San Francisco, CA}
-%
-\section{Skills}
-    \newcommand{\skillone}{\createskill{Programming Languages}{Python \cpshalf JavaScript \cpshalf Ruby \cpshalf PostgreSQL \cpshalf Git \cpshalf R}}
-    %
-    \newcommand{\skilltwo}{\createskill{Technologies}{Docker \cpshalf Ruby on Rails \cpshalf React.js \cpshalf d3.js \cpshalf REST}}
-    %
-    \newcommand{\skillthree}{\createskill{Software}{Palantir Foundry \cpshalf Revit, Navisworks \cpshalf Excel, Solver \cpshalf QGIS \cpshalf SAP ByDesign}}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-    \createskills{\skillone, \skilltwo, \skillthree}
-    \vspace{-3mm} % reduces whitespace!
-    %
-% 
+\begin{center}
+    \textbf{\Huge \scshape Colten Appleby} \\ \vspace{1pt}
+    \small 203-505-4000 $|$ \href{mailto:colten.appleby@gmail.com}{\underline{colten.appleby@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/coltenappleby}{\underline{linkedin.com/in/colten-appleby}} $|$
+    \href{https://github.com/coltenappleby}{\underline{github.com/coltenappleby}}
+\end{center}
+
+%-----------EXPERIENCE-----------
 \section{Experience}
-    %
-    \datedexperience{Katalyst.DI}{Nov 2021 - Present}
-    \explanation{Integration Engineer}{New York, NY}
-    \explanationdetail{
-        \smallskip
-        \coloredbullet\ %
-        Developed data pipelines from Katalyst.DI's (KDI) supply chain platform, customer's data, and public soures with Palantir Foundry. 
-        PySpark transformations from raw data to backing datasets for a robust Ontology designed to extract actionable intelligence to sell to clients
-        
-        \smallskip
-        \coloredbullet\ %
-        Built integrations between Autodesk BIM360, Procore, Google Sheets and Airtable with KDI platform and Palantir Foundry
+  \resumeSubHeadingListStart
 
-        \smallskip 
-        \coloredbullet\ %
-        Developed NPM package for charts and graphs in React and d3.js. Assissted with KDI's platform's front end in React and TypeScript. Helped migrate the data microservice from Java Spring Boot to .NET
-        \smallskip
-    }
-         %
-    \datedexperience{WR Liggett LLC}{Jan 2021 - Nov 2021}
-    \explanation{ERP Technology Integrator}{New York, NY}
-    \explanationdetail{
-        \smallskip
-        \coloredbullet\ %
-        Supply Chain, BoM, current state and future state mapping. Inventory and engineering software integrations
-        \smallskip 
+    \resumeSubheading
+    {Katalyst.DI}{Nov. 2021 -- Present}
+    {Integration Engineer}{New York, NY}
+    \resumeItemListStart
+      \resumeItem{Developed bidirectional data pipelines for proprietary software platform utilizing Palantir Foundry and Pyspark transformations}
+      \resumeItem{Developed integrations with several cloud platforms, including Autodesk Construction Cloud, Procore, Google Sheets, and Airtable}
+      \resumeItem{Developed, tested, and published NPM packages for use in Katalyst's web based software platform in React.JS and d3.js}
+      \resumeItem{Contributed to microservice migration from Java Spring Boot to .NET}
+    \resumeItemListEnd
 
-        \coloredbullet\ %
-        Reorganized, cleaned, and transformed PostgreSQL database into flat files for transfer into new system
+    \resumeSubheading
+      {WR Liggett LLC}{Jan 2021 -- Nov 2021}
+      {ERP Technology Integrator}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Supply Chain, BoM, current state and future state mapping. Inventory and engineering software integrations}
+        \resumeItem{Reorganized, cleaned, and transformed PostgreSQL database into flat files for transfer into new system}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
 
-        \smallskip
-     }
-     %
-    \datedexperience{WeWork}{June 2017 - Dec 2020} 
-        \explanation{ERP System Integration Project Manager}{New York, NY} 
-        \explanationdetail{ 
-            \smallskip 
-            \coloredbullet\ %
-            Coordinated implementation of \$1M SAP Business ByDesign ERP system for all areas of the business: supply chain, manufacturing, and financial systems of the pre-fabrication construction manufacturing facility
-            
-            \smallskip
-            \coloredbullet\ %
-            Modeled supply chain projections and logistics analytics with python and excel for all North American projects 
-        }
-        \explanation{Contruction Technology Researcher}{New York, NY} 
-        \explanationdetail{ 
-            \smallskip 
-            \coloredbullet\ %
-            Built python regression models to forecast material costs for WeWork\textquotesingle s North American construction spending
+    \resumeSubheading
+      {WeWork}{Jan 2020 -- Nov 2020}
+      {Construction Technology}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Coordinated implementation of \$1M SAP Business ByDesign ERP system for all areas of the business: supply chain, manufacturing, and financial systems of the pre-fabrication construction manufacturing facility}
+        \resumeItem{Modeled supply chain projections and logistics analytics with python and excel for all North American projects}
+        \resumeItem{Implemented LEAN strategies}
+      \resumeItemListEnd
 
-            \smallskip
-            \coloredbullet\
-            Promoted from Intern to Associate to Lead . Helped build a team of 25 members. Survived multiple rounds of downsizing before team was disbanded
-            
-            \smallskip
-            \coloredbullet\
-            Formed WeWork's Construction Technology Studio to help lower construction costs through data analytics, field technology, and Building Information Management (BIM). Worked with Global Head of Construction to write and launch WeWork's Construction 2.0 initiatives with the use of BIM
-            \bigskip
-        } 
-%
-\section{Additional Education}
-     %
-    \datedexperience{Flatiron Bootcamp}{Feb 2021 - May 2021}
-    \explanation{Full Stack Web Development Coding Bootcamp}{} 
-    \explanationdetail{
-        \smallskip 
-        \textbf{Baseball Lowlights} - \href{https://github.com/coltenappleby/Baseball-Lowlights-FE}{\faGithub \footnotesize FE} \cpshalf
-        \href{https://github.com/coltenappleby/Baseball-Lowlights-BE}{\faGithub \footnotesize BE}
-        - Watch, comment, like, and discuss your favorite baseball highlights!
-        \indent Technologies used: React, Javascript, Ruby, Ruby on Rails, PostgreSQL
-        \smallskip
+    \resumeSubSubheading
+      {Construction Technology Lead}{May 2017 - Jan 2020}
+      \resumeItemListStart
+       \resumeItem{Built python regression models to forecast material costs for WeWork\textquotesingle s North American construction spending}
+       \resumeItem{Promoted from Intern to Associate to Lead . Helped build a team of 25 members. Survived multiple rounds of downsizing before team was disbanded}
+       \resumeItem{Formed WeWork's Construction Technology Studio to help lower construction costs through data analytics, field technology, and Building Information Management (BIM). Worked with Global Head of Construction to write and launch WeWork's Construction 2.0 initiatives with the use of BIM}
+      \resumeItemListEnd
 
-        \textbf{Hoose} - \href{https://github.com/coltenappleby/hoose-frontend}{\faGithub \footnotesize FE} \cpshalf
-        \href{https://github.com/coltenappleby/hoose-backend}{\faGithub \footnotesize BE}
-        - Web app designed to compare zip codes\textquotesingle    housing values with the local job market
-        \indent Technologies used:  React, javascript, React Charts, Nokoguri, RESTful, Ruby on Rails, PostgreSQL, SQL
-        \smallskip
+\resumeSubHeadingListEnd
 
-        \textbf{Brewmaster} - \href{https://github.com/coltenappleby/Brewmaster}{\faGithub \footnotesize Github}
-        - View, review, find, and enjoy craft beers, breweries and pubs
-        \indent Technologies used: Ruby on Rails, SQLite, Active Record, MVC
-        \smallskip
-    }
-    %
-    \datedexperience{FreeCodeCamp}{2022}
-    \explanation{Data Visualization Course}{} 
-    \explanationdetail{
-        \smallskip 
-        \textbf{Data Visualization} - \href{https://www.freecodecamp.org/certification/fcc82496d2e-8f04-4693-b0d6-2973ed6c0ad5/data-visualization}{Certificate}
-        - Data Visualization with d3.js
-        \smallskip
-    }
-    %
-    \datedexperience{Palantir Foundry}{2022}
-    \explanation{Full Stack Web Development Coding Bootcamp}{} 
-    \explanationdetail{
-        \smallskip 
-        \textbf{Data Visualization} - \href{https://www.freecodecamp.org/certification/fcc82496d2e-8f04-4693-b0d6-2973ed6c0ad5/data-visualization}{Certificate}
-        - Data Visualization with d3.js
-        \smallskip
-    }
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Proficient Languages}{: JavaScript, React, d3.js, Python, SQL (Postgres), HTML/CSS, R, Ruby, Ruby on Rails} \\
+     \textbf{Exposure}{: C++, Java, Spring Boot, .NET} \\
+     \textbf{Developer Tools}{: Palantir Foundry, OpenAI GPT, Git, Docker, VS Code, Airtable} \\
+     \textbf{Technology}{: REST, MVC, LEAN} \\
+    }}
+\end{itemize}
 
-%
-\section{Other Interests}
-    \newcommand{\interests}{\createskill{}{Baseball \cpshalf Statistics \cpshalf History \cpshalf Running \cpshalf Skiing \cpshalf Photography}}
-    %
-    \createskills{\interests}
-    \vspace{-3mm} % reduces whitespace!
-    %
-% 
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Rensselaer Polytechnic Institute}{Troy, NY}
+    {Bachelor of Science in Industrial Engineering GPA 3.03/4.0}{Aug. 2014 -- May 2018}
+  \resumeSubheading
+    {Flatiron School}{New York, NY}
+    {Full Stack Web Development Coding Bootcamp (15 Weeks)}{Feb. 2021 -- Jun 2021}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Baseball Lowlights} $|$ \emph{JavaScript, React, PostgreSQL, Ruby, Ruby on Rails, CSS}}{May 2021}
+          \resumeItemListStart
+            \resumeItem{\href{https://github.com/coltenappleby/Baseball-Lowlights-FE}{Github Front End} $|$  \href{https://github.com/coltenappleby/Baseball-Lowlights-BE}{Github Back End}}
+            \resumeItem{Watch, comment, like, and discuss your favorite baseball highlights!}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%----------- INTERESTS -----------
+\section{Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    {Baseball, Sabermetri cs, Craft Beer, Travel, Photography, Running, Skiing, Hiking, Sailing} \\
+   }}
+\end{itemize}
+
+
+%-------------------------------------------
 \end{document}
